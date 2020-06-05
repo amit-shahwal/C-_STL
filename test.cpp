@@ -1,20 +1,19 @@
+//lower bound stl
 #include <bits/stdc++.h>
-
 using namespace std;
 
-// Complete the utopianTree function below.
-int main()
+int main() 
 {
-string str;
-string str1;
-cin>>str;
-char c='a';
-str+=c;
-cout<<str;
-cout<<str.size();
-str="";
-c='b';
-str+=c;
-cout<<str;
-cout<<str.size();
+  int n;
+  cin>>n;
+  int k=sqrt(n);
+  for(int i=2;i<=k;i++)
+  {
+    if(n%i==0)
+    {cout<<"no";
+    exit(0);}
+
+  }
+cout<<"yes";
+    return 0;
 }
