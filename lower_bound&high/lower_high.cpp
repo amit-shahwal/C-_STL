@@ -36,7 +36,7 @@ int upper_b(int k, int n)
         int mid = (hi + lo) / 2;
         if (arr[mid] <= k)
         {
-            lo = mid+1;
+            lo = mid + 1;
         }
         else if (arr[mid] > k)
         {
@@ -51,9 +51,6 @@ int upper_b(int k, int n)
     return n;
 }
 
-
-
-
 int main()
 {
 
@@ -64,7 +61,8 @@ int main()
 
     int k;
     cin >> k;
-    cout<<endl<<endl;
-    cout << "low_b:"<<low_b(k, n);
-    cout<<"upper_b:"<<upper_b(k,n);
+    cout << endl
+         << endl;
+    cout << "low_b:" << low_b(k, n);
+    cout << "upper_b:" << upper_b(k, n);
 }
